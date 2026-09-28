@@ -3,14 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Website</title>
+    <title>All About Penguins 🐧</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #2c3e50; }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #2c3e50;
+            text-align: center;
+        }
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 40px 20px;
+        }
+        h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
+        p.subtitle { margin: 0; font-size: 1.2rem; opacity: 0.9; }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .card h2 { color: #2b6cb0; margin-top: 0; }
+        ul { line-height: 1.8; }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #e2e8f0;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Our Team Project 🚀</h1>
-    <p>Created together using GitHub!</p>
+
+    <header>
+        <h1>Meet the Penguin 🐧</h1>
+        <p class="subtitle">An introduction to nature's aquatic birds</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>What is a Penguin?</h2>
+            <p>Penguins are flightless seabirds that live almost exclusively in the Southern Hemisphere. While they cannot fly in the air, their wings have evolved into flippers, making them expert swimmers under water!</p>
+        </div>
+
+        <div class="card">
+            <h2>Fun Penguin Facts</h2>
+            <ul>
+                <li><strong>Heavy Swimmers:</strong> Penguins can spend up to 75% of their lives in the ocean.</li>
+                <li><strong>Natural Tuxedo:</strong> Their black and white coloring acts as camouflage called <em>countershading</em>.</li>
+                <li><strong>Warm Blood:</strong> They have a thick layer of fat (blubber) and dense feathers to survive freezing temperatures.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by the Penguin Team 🐧 | Hosted on GitHub Pages</p>
+    </footer>
+
 </body>
 </html>
